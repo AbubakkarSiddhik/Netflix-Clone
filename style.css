@@ -1,0 +1,237 @@
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    padding: 20px 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 45px;
+}
+.navbar-nav .nav-link {
+    
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.nav-link {
+  
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.search-input-container {
+    display: none;
+    top: 50px;
+    width: 250px;
+    z-index: 1000;
+    background: rgba(0,0,0,0.9);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+#search-toggle:checked ~ .search-input-container {
+    display: block;
+}
+
+
+.search-icon {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.search-icon:hover {
+    transform: scale(1.1);
+}
+
+.search-input-container input {
+    color: white !important;
+    border-color: #333 !important;
+}
+
+.search-input-container input:focus {
+    box-shadow: none !important;
+    border-color: #fff !important;
+}
+
+
+.hero {
+    height: 90vh;
+    min-height: 500px;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95e0-ecd7979cc88b/a3873901-5b7c-46eb-b9fa-12fea5197bd3/IN-en-20240311-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.hero-content {
+    z-index: 1;
+    width: 100%;
+    padding: 0 15px;
+}
+
+
+@media (max-width: 575.98px) {
+    .hero {
+        height: 80vh;
+        min-height: 400px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .hero-text p {
+        font-size: 1.25rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .hero-text .form-control {
+        margin-bottom: 10px;
+    }
+    
+    .hero-text .btn {
+        width: 100%;
+    }
+}
+
+.hero-text {
+    z-index: 1;
+}
+
+
+.content-row {
+    padding: 50px 0;
+    border-bottom: 8px solid #222;
+}
+
+
+.video-overlay {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 73%;
+    height: 54%;
+    overflow: hidden;
+}
+
+.video-overlay video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.download-box {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    padding: 10px;
+    width: 60%;
+    min-width: 240px;
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: #333;
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+
+footer a:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+
+
+
+@media (max-width: 992px) {
+    .hero-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .content-row .row {
+        text-align: center;
+    }
+    
+    .content-row .col-lg-6 {
+        margin-bottom: 30px;
+    }
+    
+    .video-overlay {
+        top: 15%;
+        left: 10%;
+        width: 80%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+ 
+    .navbar-brand img {
+        height: 30px;
+    }
+    .navbar-brand img {
+        height: 30px;
+    }
+    
+    .hero {
+        min-height: 500px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    .input-group input {
+        margin-bottom: 10px;
+    }
+    
+    .input-group button {
+        width: 100%;
+    }
+}

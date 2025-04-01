@@ -1,0 +1,156 @@
+
+
+
+        :root {
+            --kids-primary: #E50914;
+            --kids-secondary: #00A8E1;
+            --kids-bg: #f8f9fa;
+            --kids-card: #ffffff;
+            --kids-text: #333333;
+        }
+        
+        body {
+            background-color: var(--kids-bg);
+            font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: var(--kids-text);
+        }
+        
+        
+.search-input-container {
+    display: none;
+    top: 50px;
+    width: 250px;
+    z-index: 1000;
+    background: rgba(0,0,0,0.9);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+#search-toggle:checked ~ .search-input-container {
+    display: block;
+}
+
+
+.search-icon {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.search-icon:hover {
+    transform: scale(1.1);
+}
+
+.search-input-container input {
+    color: white !important;
+    border-color: #333 !important;
+}
+
+.search-input-container input:focus {
+    box-shadow: none !important;
+    border-color: #fff !important;
+}
+
+
+        
+        .kids-header {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+            height: 70vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .kids-navbar {
+            background-color: var(--kids-primary) !important;
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .kids-navbar .navbar-brand img {
+            height: 50px;
+        }
+        
+        .profile-selector {
+            background-color: var(--kids-secondary);
+            border-radius: 8px;
+            padding: 8px 15px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .category-badge {
+            background-color: var(--kids-secondary);
+            color: white;
+            font-size: 1.2rem;
+            padding: 8px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .kids-card {
+            background-color: var(--kids-card);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .kids-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .kids-card img {
+            border-bottom: 5px solid var(--kids-primary);
+        }
+        
+        .kids-card .card-body {
+            padding: 15px;
+        }
+        
+        .kids-card .card-title {
+            color: var(--kids-primary);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .kids-card .card-text {
+            color: var(--kids-text);
+            font-size: 0.9rem;
+        }
+        
+        .age-badge {
+            background-color: var(--kids-primary);
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        .footer {
+            background-color: var(--kids-primary);
+            color: white;
+            padding: 40px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .kids-header {
+                height: 50vh;
+                min-height: 400px;
+            }
+            
+            .kids-card {
+                margin-bottom: 20px;
+            }
+        }
+  

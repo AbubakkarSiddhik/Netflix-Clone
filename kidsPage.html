@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Kids</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="kidsPage.css">
+</head>
+<body>
+
+    <header class="position-fixed w-100 top-0 bg-dark" style="z-index: 1000;">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%);">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="d-flex align-items-center ms-auto">
+                        <div class="search-container me-3 position-relative d-none d-md-block">
+                            <input type="checkbox" id="search-toggle" class="d-none">
+                            <label for="search-toggle" class="search-icon">
+                                <i class="fas fa-search text-white fs-5" style="cursor: pointer;"></i>
+                            </label>
+                            <div class="search-input-container position-absolute end-0">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-dark text-white border-secondary" 
+                                           placeholder="Titles, people, genres">
+                                    <button class="btn btn-danger" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="profile-selector me-3 d-none d-md-flex align-items-center" style="background-color: rgba(0,168,225,0.8); padding: 8px 15px; border-radius: 8px;">
+                            <i class="fas fa-child text-white me-2"></i>
+                            <span class="text-white fw-bold">KIDS PROFILE</span>
+                        </div>
+                        
+                        <a href="index.html" class="btn btn-outline-light me-3 d-none d-md-block">
+                            <i class="fas fa-sign-out-alt me-2"></i> Exit Kids
+                        </a>
+                    </div>
+                    <div class="d-md-none navbar-nav">
+                        <a href="#" class="nav-link"><i class="fas fa-search me-2"></i> Search</a>
+                        <a href="#" class="nav-link"><i class="fas fa-child me-2"></i> Change Profile</a>
+                        <a href="index.html" class="nav-link"><i class="fas fa-sign-out-alt me-2"></i> Exit Kids</a>
+                    </div>
+                </div>
+                
+       
+                
+            </div>
+        </nav>
+    </header>
+
+
+    
+<header class="kids-header" style="
+background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
+    url('https://d2fy2et424xkoh.cloudfront.net/blog/wp-content/uploads/2021/01/The-10-Best-Netflix-Movies-For-Kids1.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 70vh;
+min-height: 500px;
+">
+       
+        <div class="container">
+            <div class="text-white" style="max-width: 600px;">
+                <h1 class="display-3 fw-bold mb-4">Adventure Time</h1>
+                <p class="lead mb-4">Join Finn and Jake on magical adventures in the Land of Ooo!</p>
+                <div class="d-flex gap-3">
+                    <button class="btn btn-danger btn-lg px-4 py-2 fw-bold">
+                        <i class="fas fa-play me-2"></i> Play
+                    </button>
+                    <button class="btn btn-outline-light btn-lg px-4 py-2">
+                        <i class="fas fa-info-circle me-2"></i> More Info
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <main class="py-5">
+        <div class="container">
+            
+            <section class="mb-5">
+                <h2 class="category-badge">Popular Shows</h2>
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="kids-card h-100">
+                            <div class="position-relative">
+                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn2.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQPnIbnRnSSXbiLcF-x8xSkeYzDVC3uFBE6-2CrAyS4r8mTgcFW&psig=AOvVaw1cnGCNHqGihq6othe-CPGg&ust=1743256964879000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJidoMH4rIwDFQAAAAAdAAAAABAE" class="card-img-top" alt="Paw Patrol">
+                                <div class="age-badge">3+</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Paw Patrol</h5>
+                                <p class="card-text">Adventure-loving pups save the day!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="kids-card h-100">
+                            <div class="position-relative">
+                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcRj-pJ2RD6fko3OpexkPLjj880GKiPE7rsF30QKEpDerqeuQYFB&psig=AOvVaw37XpbDIcbfh5zOqe2i6xNU&ust=1743257038612000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOCX29X4rIwDFQAAAAAdAAAAABAE" class="card-img-top" alt="Peppa Pig">
+                                <div class="age-badge">2+</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Peppa Pig</h5>
+                                <p class="card-text">Fun adventures with Peppa and family</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="kids-card h-100">
+                            <div class="position-relative">
+                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcSYx92dByyPkxP3kLeTs8mr9E15heeWh5ODzomNBXJwyaMDXlHp&psig=AOvVaw2xcNM7YWt7O27yyEgfmRJJ&ust=1743257080737000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKix4un4rIwDFQAAAAAdAAAAABAE" class="card-img-top" alt="SpongeBob">
+                                <div class="age-badge">6+</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">SpongeBob</h5>
+                                <p class="card-text">Underwater fun in Bikini Bottom</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="kids-card h-100">
+                            <div class="position-relative">
+                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn3.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTWzdo8LmFFRWFbWCKEez4CRvEnM2ylkh-Lor696npSwOdbmz2v&psig=AOvVaw0-uV9EICtwUFIGMcT1XljS&ust=1743257108948000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKDbnff4rIwDFQAAAAAdAAAAABAE" class="card-img-top" alt="Miraculous">
+                                <div class="age-badge">7+</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Miraculous</h5>
+                                <p class="card-text">Ladybug and Cat Noir save Paris</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           
+            <section class="mb-5">
+                <h2 class="category-badge">Learn & Grow</h2>
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="kids-card h-100">
+                            <div class="position-relative">
+                                <img src="https://www.hollywoodreporter.com/wp-content/uploads/2019/05/storybots.jpg?w=1296&h=730&crop=1" class="card-img-top" alt="Ask the StoryBots">
+                                <div class="age-badge">4+</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">StoryBots</h5>
+                                <p class="card-text">Answering kids' big questions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="kids-card h-100">
+                            <div class="position-relative">
+                                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVZsHiwVzhxKFo2QeE790hGQkY84YsFHz7J5OrBf7zRx7l3iJvt71zH8ca-gwcVe0UNQA0" class="card-img-top" alt="Numberblocks">
+                                <div class="age-badge">3+</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Numberblocks</h5>
+                                <p class="card-text">Math adventures with blocks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="kids-card h-100">
+                            <div class="position-relative">
+                                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT02QUzUuxmFSfKOM0ZVe3iw3s3tT4bshFBnFeTPUAP5Fk1QmQn7C5F5HJhT9R44nKlzf4FMg" class="card-img-top" alt="Word Party">
+                                <div class="age-badge">2+</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Word Party</h5>
+                                <p class="card-text">Learning words with cute animals</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="kids-card h-100">
+                            <div class="position-relative">
+                                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOaZ_b32hNs44b3EuAZT2MnoYMeXGIzV1N_kKJCXjYiV5Fr-l3zN-Go0nqozv3Jmec9xiOew" class="card-img-top" alt="Octonauts">
+                                <div class="age-badge">4+</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Octonauts</h5>
+                                <p class="card-text">Underwater animal rescues</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Netflix Kids</h4>
+                    <p>A safe streaming experience for children of all ages</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="btn btn-outline-light me-2">
+                        <i class="fas fa-cog"></i> Parental Controls
+                    </a>
+                    <a href="index.html" class="btn btn-light">
+                        <i class="fas fa-home"></i> Back to Regular Netflix
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

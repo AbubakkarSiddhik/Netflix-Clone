@@ -1,0 +1,263 @@
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+
+        padding-top: 70px;
+    
+    
+}
+
+
+.navbar {
+    padding: 20px 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 45px;
+}
+
+
+
+.nav-link {
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+
+.search-input-container {
+    display: none;
+    top: 50px;
+    width: 250px;
+    z-index: 1000;
+    background: rgba(0,0,0,0.9);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#search-toggle:checked ~ .search-input-container {
+    display: block;
+}
+
+.search-icon {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.search-icon:hover {
+    transform: scale(1.1);
+}
+.search-input-container {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    display: none;
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#search-toggle:checked ~ .search-input-container {
+    display: block;
+}
+
+
+.search-input-container input {
+    color: white !important;
+    border-color: #333 !important;
+}
+
+.search-input-container input:focus {
+    box-shadow: none !important;
+    border-color: #fff !important;
+}
+
+
+.movies-hero {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, transparent 100%),
+    url('https://image.tmdb.org/t/p/original/4XM8DUTQb3lhLemJC51Jx4a2EuA.jpg') no-repeat center center/cover;
+
+    
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.hero-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.hero-text {
+    z-index: 1;
+}
+
+
+#movies {
+    margin-top: 80px;
+}
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.row-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.movie-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+.movie-card img {
+    transition: transform 0.3s ease;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+.movie-card:hover img {
+    transform: scale(1.1);
+}
+
+.card-hover {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease;
+}
+.movie-card:hover .card-hover {
+    opacity: 1;
+}
+.btn-play {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn-play:hover {
+    background: #fff;
+    transform: scale(1.1);
+}
+
+
+.movie-info {
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+}
+
+
+.scroll-row {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    gap: 8px;
+}
+.movie-card {
+    flex: 1 1 auto; 
+    width: 100%; 
+    max-width: 100%; 
+}
+
+.scroll-row::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-info {
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+}
+
+
+.progress-container {
+    padding: 0 8px;
+}
+
+.progress {
+    background-color: #333;
+    height: 3px;
+}
+
+.badge {
+    padding: 0.25em 0.4em;
+    font-weight: 500;
+}
+
+.text-muted {
+    font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+    
+    .btn-play {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (min-width: 576px) {
+    .scroll-row {
+        gap: 12px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .col-6 { /* ✅ Corrected for Bootstrap's grid */
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+
+    .movies-hero {
+        height: 50vh;
+        min-height: 300px;
+    }   
+    .movie-card {
+        margin-right: 0;
+    }
+    .section-title {
+        font-size: 1.25rem;
+    }
+    
+    .btn-play {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .row-title {
+        font-size: 1.2rem;
+    }
+    
+    .movies-hero {
+        height: 40vh;
+        min-height: 300px;
+    }
+    
+    .col-md-2 {
+        flex: 0 0 auto;
+        width: 33.333333%;
+    }
+}

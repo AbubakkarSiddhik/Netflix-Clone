@@ -1,0 +1,151 @@
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    padding: 20px 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 45px;
+}
+
+
+
+.nav-link {
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+
+.search-input-container {
+    display: none;
+    top: 50px;
+    width: 250px;
+    z-index: 1000;
+    background: rgba(0,0,0,0.9);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#search-toggle:checked ~ .search-input-container {
+    display: block;
+}
+
+.search-icon {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.search-icon:hover {
+    transform: scale(1.1);
+}
+
+.search-input-container input {
+    color: white !important;
+    border-color: #333 !important;
+}
+
+.search-input-container input:focus {
+    box-shadow: none !important;
+    border-color: #fff !important;
+}
+
+
+#tv-shows {
+    margin-top: 80px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.row-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.tv-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.tv-card:hover {
+    transform: scale(1.05);
+}
+
+.card-hover {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease;
+}
+
+.tv-card:hover .card-hover {
+    opacity: 1;
+}
+
+.btn-play {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    border: none;
+}
+
+.btn-play:hover {
+    background: #fff;
+    transform: scale(1.1);
+}
+
+.scroll-row {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 20px;
+}
+
+.scroll-row::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 30px;
+    }
+    .tv-card {
+        margin-right: 10px;
+    }
+    
+    .row-title {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .col-md-2 {
+        flex: 0 0 auto;
+        width: 33.333333%;
+    }
+}
+
+
+.progress-container {
+    padding: 0 5px;
+}
+
+.progress {
+    background-color: #333;
+}

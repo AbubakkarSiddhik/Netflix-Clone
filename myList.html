@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My List - Netflix Clone</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="myList.css">
+</head>
+<body>
+   
+
+    <header class="position-fixed w-100 top-0 bg-dark" style="z-index: 1000;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%);">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tvShows.html">TV Shows</a></li>
+                        <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="new-popular.html">New & Popular</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="myList.html ">My List</a></li>
+                    </ul>
+                    
+                    <div class="d-flex align-items-center">
+                        
+                        <div class="search-container me-3 position-relative">
+                            <input type="checkbox" id="search-toggle" class="d-none">
+                            <label for="search-toggle" class="search-icon">
+                                <i class="fas fa-search text-white fs-5" style="cursor: pointer;"></i>
+                            </label>
+                            <div class="search-input-container position-absolute end-0">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-dark text-white border-secondary" 
+                                           placeholder="Titles, people, genres">
+                                    <button class="btn btn-danger" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                 
+                        <div class="nav-item me-3 ">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-bell text-white fs-5"></i>
+                            </a>
+                        </div>
+                        
+                   
+                        <div class="nav-item me-3 ">
+                            <a class="nav-link" href="kidsPage.html">
+                                <i class="fas fa-child text-white fs-5"></i>
+                            </a>
+                        </div>
+                        
+                         
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user-circle text-white fs-5 me-1"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Manage Profiles</a></li>
+                                <li><a class="dropdown-item" href="#">Account</a></li>
+                                <li><a class="dropdown-item" href="#">Help Center</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Sign out of Netflix</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero-section position-relative">
+        
+
+        <div class="hero-background position-absolute w-100 h-100">
+            <div class="position-absolute w-100 h-100" 
+                 style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%); z-index: 1;">
+            </div>
+        </div>
+        
+       
+        <div class="hero-content position-relative" style="z-index: 2;">
+            <div class="container">
+                <h1 class="hero-title display-3 fw-bold mb-4">My List</h1>
+                
+             
+                <div class="d-flex align-items-center mb-4">
+                    <span class="badge bg-danger me-3">NETFLIX</span>
+                    <span class="text-white-50 me-3"><i class="fas fa-check-circle me-1"></i> Your List</span>
+                    <span class="text-white-50">Updated today</span>
+                </div>
+            
+                <div class="d-flex gap-3">
+                    <button class="btn btn-lg btn-light rounded-1 px-4">
+                        <i class="fas fa-play me-2"></i> Play All
+                    </button>
+                    <button class="btn btn-lg btn-outline-light rounded-1 px-4">
+                        <i class="fas fa-info-circle me-2"></i> Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+   
+    <section class="list-section">
+        <h2 class="section-title">My List</h2>
+        
+        <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg" alt="Stranger Things">
+                    <div class="movie-info">
+                        <div class="movie-title">Stranger Things</div>
+                        <div class="movie-meta">TV Show • 4 Seasons</div>
+                    </div>
+                    <a href="#" class="remove-btn" title="Remove from list">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg" alt="The Witcher">
+                    <div class="movie-info">
+                        <div class="movie-title">The Witcher</div>
+                        <div class="movie-meta">TV Show • 3 Seasons</div>
+                    </div>
+                    <a href="#" class="remove-btn" title="Remove from list">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/9yxep7oJdkj3Pla9TD9gKflRApY.jpg" alt="Extraction">
+                    <div class="movie-info">
+                        <div class="movie-title">Extraction</div>
+                        <div class="movie-meta">Movie • 2020</div>
+                    </div>
+                    <a href="#" class="remove-btn" title="Remove from list">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Parasite">
+                    <div class="movie-info">
+                        <div class="movie-title">Parasite</div>
+                        <div class="movie-meta">Movie • 2019</div>
+                    </div>
+                    <a href="#" class="remove-btn" title="Remove from list">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/7dFZJ2ZJJdcmkp05B9NWlqTJ5tq.jpg" alt="The Queen's Gambit">
+                    <div class="movie-info">
+                        <div class="movie-title">The Queen's Gambit</div>
+                        <div class="movie-meta">TV Show • Limited Series</div>
+                    </div>
+                    <a href="#" class="remove-btn" title="Remove from list">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/6XYLiMxHAaCsoyrVo38LBWMw2p8.jpg" alt="The Irishman">
+                    <div class="movie-info">
+                        <div class="movie-title">The Irishman</div>
+                        <div class="movie-meta">Movie • 2019</div>
+                    </div>
+                    <a href="#" class="remove-btn" title="Remove from list">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/34m2tygAYBGqA9MXKhRDtzYd4MR.jpg" alt="Money Heist">
+                    <div class="movie-info">
+                        <div class="movie-title">Money Heist</div>
+                        <div class="movie-meta">TV Show • 5 Seasons</div>
+                    </div>
+                    <a href="#" class="remove-btn" title="Remove from list">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/6kbAMLteGO8yyewYau6bJ683sw7.jpg" alt="Dune">
+                    <div class="movie-info">
+                        <div class="movie-title">Dune</div>
+                        <div class="movie-meta">Movie • 2021</div>
+                    </div>
+                    <a href="#" class="remove-btn" title="Remove from list">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+   
+
+<!--         
+        <div class="empty-list">
+            <div class="empty-list-icon">
+                <i class="far fa-bookmark"></i>
+            </div>
+            <h3 class="empty-list-title">Your list is empty</h3>
+            <p class="empty-list-text">
+                Add TV shows and movies to your list so you can easily find them later.
+            </p>
+            <a href="#" class="btn btn-netflix">Find something to watch</a>
+        </div>
+        -->
+    </section>
+
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <p>Questions? Call 1-844-505-2993</p>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 footer-links">
+                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#" class="footer-link">Help Center</a>
+                    <a href="#" class="footer-link">Account</a>
+                    <a href="#" class="footer-link">Media Center</a>
+                    <a href="#" class="footer-link">Investor Relations</a>
+                    <a href="#" class="footer-link">Jobs</a>
+                    <a href="#" class="footer-link">Ways to Watch</a>
+                    <a href="#" class="footer-link">Terms of Use</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Cookie Preferences</a>
+                    <a href="#" class="footer-link">Corporate Information</a>
+                    <a href="#" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">Speed Test</a>
+                    <a href="#" class="footer-link">Legal Notices</a>
+                    <a href="#" class="footer-link">Only on Netflix</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Netflix Clone (For Educational Purposes)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
